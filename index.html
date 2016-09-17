@@ -4,18 +4,19 @@
   <!--Import Google Icon Font-->
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
 </head>
 
-<body>
+<body class="teal lighten-5">
   
   <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo center"><img style="height:35px; margin-right:5px; margin-top:10px;" src="logo_ideas/logowhite.png">OWL Aerial Consulting</a>
+    <div class="nav-wrapper gradient">
+    <img style="height:35px; margin-left:180px; margin-top:15px; margin-right:5px" src="logo_ideas/logowhite.png">
+      <a href="#!" class="brand-logo center">OWL Visual Solutions</a>
       <ul class="left hide-on-med-and-down">
         <li style="padding-left:1cm;"><a href="/real_estate">Real Estate</a></li>
         <li><a href="/agriculture">Agriculture</a></li>
@@ -32,31 +33,35 @@
   <div class="slider" style="width:100%;">
     <ul class="slides">
       <li>
-        <img src="images/DJI_0112.JPG"> 
+        <!--<video style="width:100%" controls autoplay loop> <source src ="gif/mhouse_gif.mp4" type ="video/mp4"></video> -->
+        <img src= "gif/mhousefull.gif">
         <div class="caption center-align">
-          <h2 class="white-text"><b>Go Beyond Limitations</b></h2>
+          <!--<h2 class="white-text"><b>Go Beyond Limitations</b></h2>-->
           <h5 class="light grey-text text-lighten-3"></h5>
         </div>
       </li>
-      <li>
+      <!--<li style="background-color:white;">
+        <video autoplay loop height="100%"><source src="gif/3dvid1.mp4" type="video/mp4"></video>
+      </li>
+      <li>-->
         <!--***CHANGE THIS PIC GIF PULLING AWAY FROM FRONT DOOR***-->
-        <img src="images/DJI_0079.JPG"> 
+        <img src="images/DJI_0112.JPG"> 
         <div class="caption left-align">
-          <h2 class="white-text"><b>Experience Never Seen Before Views</b></h2>
+          <h2 class="white-text" style="text-shadow:5px 5px #000"><b>Experience Incredible Scenery</b></h2>
           <h5 class="black-text text-lighten-3"></h5>
         </div>
       </li>
       <li>
         <img src="images/DJI_0081.JPG"> 
         <div class="caption right-align">
-          <h2><b>Amazing Aerial Angles</b></h2>
+          <h2 style="margin-top:330px; text-shadow:5px 5px #000"><b>Beautiful Angles</b></h2>
           <h5 class="light grey-text text-lighten-3"></h5>
         </div>
       </li>
       <li>
         <img src="images/DJI_0117.JPG"> 
         <div class="caption center-align">
-          <h2><b>Obtain Unique Stunning Views</b></h2>
+          <h2 style="margin-top:150px; text-shadow:5px 5px #000"><b>Bird's Eye Views</b></h2>
           <h5 class="light grey-text text-lighten-3"></h5>
         </div>
       </li>
@@ -69,8 +74,9 @@
         <!-- Promo Content 1 goes here -->
           <div class="card">
             <div class="card-image">
-              <img src="images/DJI_0075.JPG">
-              <span class="card-title">Real Estate</span>
+              <!--<video autoplay loop height="345px"><source src="gif/3dvid1.mp4" type="video/mp4"></video>
+              <span class="card-title" style="text-shadow:2px 2px #000">Real Estate</span>-->
+              <img src="images/DJI_0062.jpg">
             </div>
             <div class="card-content">
               <p>I am a very simple card. I am good at containing small bits of information.
@@ -86,7 +92,7 @@
           <div class="card">
             <div class="card-image">
               <img src="images/DJI_0084.JPG">
-              <span class="card-title">Agriculture</span>
+              <span class="card-title" style="text-shadow:2px 2px #000">Agriculture</span>
             </div>
             <div class="card-content">
               <p>I am a very simple card. I am good at containing small bits of information.
@@ -100,11 +106,10 @@
       </div>
       <div class="col s4">
         <!-- Promo Content 3 goes here -->
-      
           <div class="card">
             <div class="card-image">
               <img src="images/DJI_0079.JPG">
-              <span class="card-title">Photography</span>
+              <span class="card-title" style="text-shadow:2px 2px #000">Photography</span>
             </div>
             <div class="card-content">
               <p>I am a very simple card. I am good at containing small bits of information.
@@ -114,11 +119,28 @@
               <a href="#">This is a link</a>
             </div>
           </div>
-        
       </div>
-
+    <!--Close Row -->
     </div>
 
+  <div class="row">
+    <div class="col s4">
+      <img src="images/FAA.png">
+    </div>
+    <div class="col s8">
+      <div style="width:80%; text-align:left;">
+        <h2 style=""><b>FAA Certified</b></h2>
+      
+        <p>Our commercial operations are legally certified under part 107 of the Federal Aviation Regulations </p>
+        <p>and holds a blanket Certificate of Operation (COA) for all 50 U.S. states</p>
+        <p><br />OWL Visual Solutions (OVS) is the first businesses in NJ to be granted this certification</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col s12">
+    <iframe width="100%" height="500px" scrolling="no" allowfullscreen frameborder="0" src="images/room360.vr.jpg"></iframe>
+  </div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
 
@@ -126,9 +148,9 @@
     $(document).ready(function(){
       $('.slider').slider({
         full_width: true,
-        indicators: true,
+        indicators: false,
         height: 600,
-        interval:2500
+        interval:5750
         });
           });
   </script>
